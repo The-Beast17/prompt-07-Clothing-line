@@ -1,0 +1,120 @@
+*body{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box ;
+}
+
+html , body {
+    width : 100%;
+    height : 100vh;
+    position: relative;
+}
+
+.upper-breadCrumb{
+    width :100%;
+    /* height : max-content; */
+    font-size : 1.8vh; 
+    text-align: center;
+    background-color: black;
+    color:#ffff ;
+    position : fixed;
+    top :0;
+    z-index: 100;
+    padding: 0 0;
+}
+/* .upper-breadCrumb p{
+  
+} */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0.6vw 2vw;
+    position :fixed;
+    top : 1.1vw;
+    width : 100%;
+    z-index: 100;
+    color :white;
+    /* background-color: black; */
+}
+nav .menu .btn{
+    padding : 0 0;
+    color : white; 
+}
+
+nav .menu .ri-menu-2-line{
+    font-size: 4vw;
+}
+nav .menu .btn span{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+nav h1{
+    font-size: 3.5vw;
+}
+
+nav .login{
+    display: flex;
+    gap : 1.5vw;
+    font-size: 1.3vw;
+}
+nav .login a{
+    text-decoration: none;
+    color : white; 
+}
+
+.breadcrumb{
+    width : 100%;
+    position: absolute;
+    left: 0;
+    top:6vw;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    gap :6vw;
+    background-color: white;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color :white;
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+.page1 {
+    margin-top : 1.1vw;
+    background-color: aqua;
+    height : 100%;
+    width :100%;
+}
+
+.page1 .carousel .carousel-inner p{
+    font-size: 1vw;
+    }
+.page1 .carousel .carousel-inner h1{
+       font-size:3.5vw;
+    }
+
+@media (max-width : 600px){
+    .upper-breadCrumb {
+        height : 2vh;
+        font-size: 1.8vw;
+    }
+    nav{
+        top :2vh;
+    }
+
+    .breadcrumb{
+        top :5.5vh;
+    }
+    .breadcrumb  a {
+        font-size: 2vw;
+    }
+    .page1 .carousel .carousel-caption h1
+     {
+        
+    }
+}
